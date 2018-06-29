@@ -1,7 +1,6 @@
 let CacheName = "restaurants-static-v3";
 let urlToCache = [
   "./",
-  "./sw_registration.js",
   "index.html",  
   "restaurant.html",
   "css/styles.css",
