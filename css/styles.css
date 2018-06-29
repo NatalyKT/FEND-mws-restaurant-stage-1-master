@@ -135,8 +135,8 @@ nav h1 a {
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
   /*Pictures of restaurants are shown on the screen*/
-  /*вот здесь надо поправить*/
-      display: flex;
+  /*Small changes in the style of the list*/
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -285,3 +285,40 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+/* ====================== Responsive part ====================== */
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    #restaurants-list li {
+        width: 42%;
+    }
+    #footer {
+      font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 691px) {
+    #restaurants-list li {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 690px) and (min-width: 415px) {
+    #restaurants-list li {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .inside #map-container {
+      width: 100%;
+      height: 400px;
+      position: relative;
+      display: block;
+      margin: auto;
+      top: 0;
+    }
+
+     #restaurants-list {
+      flex-direction: column;
+    }
